@@ -9,7 +9,7 @@ class Leaderboard extends Component {
             <ul>
                 {
                     this.props.users.map(user=>{
-                        return (<li className='user'>
+                        return (<li className='user' key={user.id}>
                             <img src={user.avatarURL} alt={`Avatar for ${user.name}`} />
 
                             <div>
